@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SbEcomApplication {
 
 	public static void main(String[] args) {
-		System.out.println("hello world");
+		System.out.println("hello world 1");
 		SpringApplication.run(SbEcomApplication.class, args);
 	}
 
