@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SbEcomApplication {
 
 	public static void main(String[] args) {
-		System.out.println("hello world 1");
-		System.out.println("changed it in my personal pc");
 		SpringApplication.run(SbEcomApplication.class, args);
 	}
 
