@@ -19,7 +19,6 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("/api/public/categories")
-    //@RequestMapping(value = '')
     public ResponseEntity<List<Category>> getAllCategories() {
         List<Category> categories = categoryService.getAllCategories();
         return new ResponseEntity<>(categories, HttpStatus.OK);
@@ -41,7 +40,7 @@ public class CategoryController {
         }
     }
 
-    @PutMapping("public/categories/{categoryId}")
+    @PutMapping("api/public/categories/{categoryId}")
     public ResponseEntity<String> updateCategory(@RequestBody Category category,
                                                  @PathVariable Long categoryId) {
         try {
